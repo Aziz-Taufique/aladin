@@ -102,6 +102,6 @@ userSchema.virtual("totalEnrolledCourses").get(function (this: IUser) {
     return this.enrolledCourses?.length || 0;
 });
 
-const UserModel: Model<IUser> = mongoose.model<IUser>("Usermodel", userSchema);
+const User: Model<IUser> = mongoose.model<IUser>("User", userSchema);
 
-export default UserModel;
+export default User;
